@@ -1,0 +1,39 @@
+.headerContainer {
+    background: var(--yellow);
+    height: 5.5rem;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    img {
+      height: 3rem; 
+    }
+  
+    h1 {
+      font-size: 2rem;
+      color: var(--white);
+      margin-left: .4rem;
+      font-weight: 500;
+    }
+  
+    h1 strong {
+      color: var(--black);
+  
+      font-weight: 800;
+    }
+
+    @media(min-width:750px) {
+        height: 6.5rem;
+
+        img {
+            height: 3.5rem; 
+        }
+
+        h1 {
+            font-size: 2.3rem;
+            margin-left: .7rem;
+          }
+    }
+}
+

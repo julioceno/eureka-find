@@ -1,0 +1,73 @@
+.containerModal {
+  position: absolute;
+  background: rgba(0,0,0,0.1);
+  height: calc(100vh - 5.5rem - 4rem);
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media(min-width: 750px) {
+    height: calc(100vh - 6.5rem - 4.5rem);
+  }
+}
+.popup {
+  height: 8rem;
+  width: 18rem;
+  border-radius: .5rem;
+
+  background: var(--white);
+  margin-bottom: 10rem;
+  padding-top: .6rem;
+
+  animation-name: appear;
+  animation-duration: 300ms;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+
+    h3 {
+      font-size: 1.3rem;
+      color: var(--black);
+      font-weight: 700;
+    }
+
+    button {
+      font-size: 0;
+      background: none;
+      border: none;
+
+      img {
+        height: 1.5rem;
+      }
+    }
+  }
+
+  p {
+    text-align: center;
+    margin-top: .5rem;
+    padding: 0 1.5rem;
+
+  }
+
+  @media(min-width: 760px) {
+    width: 20rem;
+  }
+ 
+
+  
+}
+
+@keyframes appear{
+    from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+

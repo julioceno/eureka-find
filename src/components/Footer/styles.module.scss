@@ -1,0 +1,33 @@
+.footerContainer {
+    background: var(--black);
+    height: 4rem;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    img {
+      height: 1.3rem; 
+    };
+  
+    h3 {
+      font-size: 1.1rem;
+      color: var(--gray);
+      margin-left: .4rem;
+      font-weight: 100;
+    };
+
+    @media(min-width:750px) {
+        height: 4.5rem;
+
+        img {
+            height: 1.6rem; 
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin-left: .6rem;
+          }
+    }
+}
+
