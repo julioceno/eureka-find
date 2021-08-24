@@ -47,7 +47,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ```bash
   #Instale as dependências
-  yarn
+  yarn install 
 
   #Execute o servidor web
   yarn dev
