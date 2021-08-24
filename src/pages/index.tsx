@@ -7,25 +7,8 @@ import { Popup } from "../components/Popup"
 import { api } from "../services/api";
 import styles from './Home.module.scss'
 
-type cepProps = {
-  data: {
-    id: number;
-    cep: string;
-    logradouro: string;
-    complemento: string;
-    bairro: string;
-    localidade: string;
-    uf: string;
-    ibge: string;
-    gia: string;
-    ddd: string;
-    siafi: string;
-    createdAt: string;
-    updatedAt: string;
-  };
-}
 
-type cepProps2 = {
+type cepProps = {
   id: number;
   cep: string;
   logradouro: string;
@@ -45,7 +28,7 @@ export default function Home() {
   const [isVisibleInformations, setIsVisibleInformations] = useState(false)
   const [isVisiblePopup, setIsVisiblePopup] = useState(false)
   const [cep, setCep] = useState("")
-  const [cepObject, setCepObject] = useState({} as cepProps2)
+  const [cepObject, setCepObject] = useState({} as cepProps)
   
   async function handleTextChange(text) {
     setIsVisibleInformations(false)
@@ -59,7 +42,7 @@ export default function Home() {
       try {
         const cepFormated = cep.replace(".", "").replace(/-/, "")
 
-        const { data }: cepProps = await api.get(`getCep/${cepFormated}`);
+        const { data } = await api.get(`getCep/${cepFormated}`);
 
         setCepObject(data)
 
