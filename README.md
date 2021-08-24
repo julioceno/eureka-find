@@ -8,4 +8,8 @@
 ![SASS](https://img.shields.io/badge/-SASS-BF4080?style=flat-square&logo=sass&logoColor=white "SASS")
 
 A **Next Level Week** é um evento da **Rocketseat** de imersão em tecnologia. Onde é uma semana de aulas com conteúdos incríveis e uma comunidade bem massa de se fazer network. Nesse evento há diversas tecnologias, esta por exemplo é a trilha de **ReactJs**.
+
+
+![Banner](./.github/home-page.png)
+
 </div>
