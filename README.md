@@ -35,7 +35,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 🚀 Como executar
 
 - Você precisa instalar o [Node.js](https://nodejs.org/en/) e [Yarn](https://yarnpkg.com/) para executar este projeto.
-
+- Também será necessário iniciar a <a href="https://github.com/julioceno/Eureka-find-api">API</a> que foi desenvolvida para retornar os resultados para o usuário.
 **Clone o projeto**
 
 ```bash
@@ -48,7 +48,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
   #Instale as dependências
   yarn
 
-  #Execute o servidor da <a href="https://github.com/julioceno/Eureka-find-api">API</a>
+  #Execute o servidor da 
 
   #Execute o servidor web
   yarn dev
