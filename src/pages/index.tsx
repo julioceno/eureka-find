@@ -1,11 +1,11 @@
-import { GetStaticProps } from "next"; 
-
 import { useState } from "react";
 import InputMask from "react-input-mask";
 
-import { Popup } from "../components/Popup"
 import { api } from "../services/api";
-import styles from './Home.module.scss'
+
+import { Popup } from "../components/Popup"
+
+import styles from './Home.module.scss';
 
 
 type cepProps = {
@@ -22,17 +22,17 @@ type cepProps = {
   siafi: string;
   createdAt: string;
   updatedAt: string;
-}
+};
 
 export default function Home() {
-  const [isVisibleInformations, setIsVisibleInformations] = useState(false)
-  const [isVisiblePopup, setIsVisiblePopup] = useState(false)
-  const [cep, setCep] = useState("")
-  const [cepObject, setCepObject] = useState({} as cepProps)
+  const [isVisibleInformations, setIsVisibleInformations] = useState(false);
+  const [isVisiblePopup, setIsVisiblePopup] = useState(false);
+  const [cep, setCep] = useState("");
+  const [cepObject, setCepObject] = useState({} as cepProps);
   
   async function handleTextChange(text) {
-    setIsVisibleInformations(false)
-    setCep(text.target.value)
+    setIsVisibleInformations(false);
+    setCep(text.target.value);
   };
 
   async function searchCep() {
@@ -40,21 +40,21 @@ export default function Home() {
    
     if (regex.test(cep)) {
       try {
-        const cepFormated = cep.replace(".", "").replace(/-/, "")
+        const cepFormated = cep.replace(".", "").replace(/-/, "");
 
         const { data } = await api.get(`getCep/${cepFormated}`);
 
-        setCepObject(data)
+        setCepObject(data);
 
-        return setIsVisibleInformations(true)
+        return setIsVisibleInformations(true);
       } catch(err) {
         
         setIsVisiblePopup(true);
         return setIsVisibleInformations(false);
-      } 
+      };
     };
 
-    setIsVisiblePopup(true)
+    setIsVisiblePopup(true);
     setIsVisibleInformations(false);
   };
 
@@ -91,5 +91,5 @@ export default function Home() {
       }
    
     </div>
-  )
-}
+  );
+};

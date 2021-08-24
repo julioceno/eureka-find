@@ -1,7 +1,7 @@
-import '../styles/globals.scss'
+import '../styles/globals.scss';
 
-import { Header } from "../components/Header"
-import { Footer } from "../components/Footer"
+import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
 
 function MyApp({ Component, pageProps }) {
   return(
@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       <Footer />
     </div>
-  )
-}
+  );
+};
 
 export default MyApp;

@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 type PopupProps = {
     togglePopup: () => void;
     message: string;
-}
+};
 
 export function Popup({ togglePopup, message }: PopupProps) {
     return (
