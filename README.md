@@ -56,3 +56,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ```
 
 O aplicativo estará para acesso em seu navegador em: `http://localhost:3000`
+
+---
+
+<h4 align="center"> <em>&lt;/&gt;</em> by <a href="https://github.com/julioceno" target="_blank">julioceno</a> </h4>
