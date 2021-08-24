@@ -15,10 +15,14 @@ A **Next Level Week** é um evento da **Rocketseat** de imersão em tecnologia. 
 Caso o cep estiver incompleto ou não for encontrado, será disparado este popup
 
 ![Banner](./.github/popup-error.png)
+<div> 
+ ![Banner](./.github/home-page-responsiveness.png)
 
-Aplicação totalmente responsiva
+ Aplicação totalmente responsiva
+</div>
 
-![Banner](./.github/home-page-responsiveness.png)
+
+
 
 
 
