@@ -83,6 +83,8 @@
   p {
     text-align: center;
     font-size: 1rem;
+    color: var(--black);
+    font-weight: 500;
 
     @media(min-width:750px) {
       font-size: 1.35rem;

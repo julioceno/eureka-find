@@ -1,24 +1,74 @@
+import { GetStaticProps } from "next"; 
+
 import { useState } from "react";
 import InputMask from "react-input-mask";
 
 import { Popup } from "../components/Popup"
+import { api } from "../services/api";
 import styles from './Home.module.scss'
+
+type cepProps = {
+  data: {
+    id: number;
+    cep: string;
+    logradouro: string;
+    complemento: string;
+    bairro: string;
+    localidade: string;
+    uf: string;
+    ibge: string;
+    gia: string;
+    ddd: string;
+    siafi: string;
+    createdAt: string;
+    updatedAt: string;
+  };
+}
+
+type cepProps2 = {
+  id: number;
+  cep: string;
+  logradouro: string;
+  complemento: string;
+  bairro: string;
+  localidade: string;
+  uf: string;
+  ibge: string;
+  gia: string;
+  ddd: string;
+  siafi: string;
+  createdAt: string;
+  updatedAt: string;
+}
 
 export default function Home() {
   const [isVisibleInformations, setIsVisibleInformations] = useState(false)
   const [isVisiblePopup, setIsVisiblePopup] = useState(false)
   const [cep, setCep] = useState("")
+  const [cepObject, setCepObject] = useState({} as cepProps2)
   
-  function handleTextChange(text) {
+  async function handleTextChange(text) {
     setIsVisibleInformations(false)
     setCep(text.target.value)
   };
 
-  function searchCep() {
+  async function searchCep() {
     const regex = new RegExp("[0-9]{2}.[0-9]{3}-[0-9]{3}");
-  
+   
     if (regex.test(cep)) {
-      return setIsVisibleInformations(true)
+      try {
+        const cepFormated = cep.replace(".", "").replace(/-/, "")
+
+        const { data }: cepProps = await api.get(`getCep/${cepFormated}`);
+
+        setCepObject(data)
+
+        return setIsVisibleInformations(true)
+      } catch(err) {
+        
+        setIsVisiblePopup(true);
+        return setIsVisibleInformations(false);
+      } 
     };
 
     setIsVisiblePopup(true)
@@ -43,9 +93,10 @@ export default function Home() {
      { isVisibleInformations &&
         <div className={styles.informations}>
           <p>{cep}</p>
-          <p>Rio de Janeiro</p>
-          <p>Bairro dos jardins</p>
-          <p>Rua das oliveiras</p>
+          <p>{cepObject.localidade}, {cepObject.uf}</p>
+          <p>{cepObject.bairro}</p>
+          <p>{cepObject.logradouro}</p>
+          <p>{cepObject.complemento}</p>
         </div>
       }
 
