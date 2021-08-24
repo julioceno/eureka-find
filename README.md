@@ -6,7 +6,7 @@
 ![React](https://img.shields.io/badge/-React-1572B6?style=flat-square&logo=react&logoColor=white "React")
 ![Typescript](https://img.shields.io/badge/-Typescript-1572B6?style=flat-square&logo=typescript&logoColor=white "Typescript")
 ![SASS](https://img.shields.io/badge/-SASS-BF4080?style=flat-square&logo=sass&logoColor=white "SASS")
-![AxiosJs](https://img.shields.io/badge/-AxiosJs-BF4080?style=flat-square&logo=axios.js&logoColor=white "AxiosJs")
+![AxiosJ]js](https://img.shields.io/badge/-Axiosjs-BF4080?style=flat-square&logo=axios.js&logoColor=white "AxiosJs")
 
 Esse projeto foi desenvolvido como teste admissional para entrar na Eureka labs. Desenvolvi este site com **React** utilizando o **Next.js** para melhorar na eficiência e focar na produção. Este projeto faz requisições a uma API que foi desenvolvida para retornar o cep desejado pelo usuário. <a href="https://github.com/julioceno/Eureka-find-api">Acesse a API</a>.
 </b>
