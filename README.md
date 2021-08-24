@@ -49,8 +49,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
   #Instale as dependências
   yarn
 
-  #Execute o servidor da 
-
   #Execute o servidor web
   yarn dev
 ```
