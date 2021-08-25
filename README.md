@@ -7,7 +7,7 @@
 ![Typescript](https://img.shields.io/badge/-Typescript-1572B6?style=flat-square&logo=typescript&logoColor=white "Typescript")
 ![SASS](https://img.shields.io/badge/-SASS-BF4080?style=flat-square&logo=sass&logoColor=white "SASS")
 
-Esse projeto foi desenvolvido como teste admissional para entrar na Eureka labs. Desenvolvi este site com **React** utilizando o **Next.js** para melhorar na eficiência e focar na produção. Este projeto faz requisições a uma API que foi desenvolvida para retornar o cep desejado pelo usuário. <a href="https://github.com/julioceno/Eureka-find-api">Acesse a API</a>.
+Esse projeto foi desenvolvido como teste admissional para entrar na Eureka labs. Desenvolvi este site com **React** utilizando o **Next.js** para melhorar na eficiência e focar na produção. Este projeto faz requisições a uma API que foi desenvolvida para retornar o cep desejado pelo usuário. <a href="https://github.com/julioceno/eureka-find-api">Acesse a API</a>.
 </b>
 
 ![Banner](./.github/home-page.png)
@@ -35,12 +35,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 🚀 Como executar
 
 - Você precisa instalar o [Node.js](https://nodejs.org/en/) e [Yarn](https://yarnpkg.com/) para executar este projeto.
-- Também será necessário iniciar a <a href="https://github.com/julioceno/Eureka-find-api">API</a> que foi desenvolvida para retornar os resultados para o usuário.
+- Também será necessário iniciar a <a href="https://github.com/julioceno/eureka-find-api">API</a> que foi desenvolvida para retornar os resultados para o usuário.
 
 **Clone o projeto**
 
 ```bash
-  git clone https://github.com/julioceno/Eureka-find.git
+  git clone https://github.com/julioceno/eureka-find.git
 ```
 
 **Siga os passo abaixo**
